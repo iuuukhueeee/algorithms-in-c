@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		01C1B8A32D8910DE00C555B2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C1B8A22D8910DE00C555B2 /* main.c */; };
+		CF012C222DA2B65F00150DE7 /* hireme.c in Sources */ = {isa = PBXBuildFile; fileRef = CF012C152DA2B55200150DE7 /* hireme.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		01C1B89D2D8910DE00C555B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CF012C192DA2B65800150DE7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		01C1B89F2D8910DE00C555B2 /* algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C1B8A22D8910DE00C555B2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CF012C152DA2B55200150DE7 /* hireme.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hireme.c; sourceTree = "<group>"; };
+		CF012C1B2DA2B65800150DE7 /* hireme */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hireme; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		01C1B89C2D8910DE00C555B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF012C182DA2B65800150DE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				01C1B8A12D8910DE00C555B2 /* algorithms */,
+				CF012C1C2DA2B65800150DE7 /* hireme */,
 				01C1B8A02D8910DE00C555B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				01C1B89F2D8910DE00C555B2 /* algorithms */,
+				CF012C1B2DA2B65800150DE7 /* hireme */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				01C1B8A22D8910DE00C555B2 /* main.c */,
 			);
 			path = algorithms;
+			sourceTree = "<group>";
+		};
+		CF012C1C2DA2B65800150DE7 /* hireme */ = {
+			isa = PBXGroup;
+			children = (
+				CF012C152DA2B55200150DE7 /* hireme.c */,
+			);
+			path = hireme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 01C1B89F2D8910DE00C555B2 /* algorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		CF012C1A2DA2B65800150DE7 /* hireme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF012C1F2DA2B65800150DE7 /* Build configuration list for PBXNativeTarget "hireme" */;
+			buildPhases = (
+				CF012C172DA2B65800150DE7 /* Sources */,
+				CF012C182DA2B65800150DE7 /* Frameworks */,
+				CF012C192DA2B65800150DE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hireme;
+			productName = hireme;
+			productReference = CF012C1B2DA2B65800150DE7 /* hireme */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					01C1B89E2D8910DE00C555B2 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CF012C1A2DA2B65800150DE7 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				01C1B89E2D8910DE00C555B2 /* algorithms */,
+				CF012C1A2DA2B65800150DE7 /* hireme */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C1B8A32D8910DE00C555B2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF012C172DA2B65800150DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF012C222DA2B65F00150DE7 /* hireme.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +315,22 @@
 			};
 			name = Release;
 		};
+		CF012C202DA2B65800150DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF012C212DA2B65800150DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +348,15 @@
 			buildConfigurations = (
 				01C1B8A72D8910DE00C555B2 /* Debug */,
 				01C1B8A82D8910DE00C555B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF012C1F2DA2B65800150DE7 /* Build configuration list for PBXNativeTarget "hireme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF012C202DA2B65800150DE7 /* Debug */,
+				CF012C212DA2B65800150DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
